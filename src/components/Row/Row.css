@@ -1,0 +1,87 @@
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.row-posters2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemname1 {
+  position: relative;
+}
+
+.upcomming-container1 {
+  text-align: center;
+}
+.rep {
+  font-size: 40;
+  transition: transform 450ms;
+}
+
+.imagestyle {
+  border-radius: 80%;
+}
+.styleimages {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  justify-content: center;
+}
+
+.row-posters::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.game-button2 {
+  background-color: transparent;
+  color: black;
+  position: relative;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 450ms;
+}
+
+.game-button2:hover {
+  transform: scale(1.05);
+}
+
+.game-button {
+  background-color: black;
+  border: none;
+  outline: none;
+  padding: 15px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin-right: 40px;
+  margin-left: 40px;
+  transition: transform 450ms;
+}
+
+.row-poster {
+  cursor: pointer;
+  transition: transform 450ms;
+}
+
+.rep:hover {
+  transform: scale(1.1);
+  cursor: default;
+}
+
+.title-color {
+  color: white;
+}
+.row-poster:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 700px) {
+  .container {
+    padding-top: 350px;
+  }
+}

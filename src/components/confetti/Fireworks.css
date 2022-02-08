@@ -1,0 +1,9 @@
+.verified {
+    transition: transform 450ms;
+}
+
+.verified:hover{
+    cursor: default;
+    transform: scale(1.5);
+}
+

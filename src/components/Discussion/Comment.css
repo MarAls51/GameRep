@@ -1,0 +1,26 @@
+.discussion-post-div2{
+    display:flex;
+    flex-direction:column;
+    overflow-x:scroll;
+    justify-content:center;
+    align-items:center;
+    max-width:60%;
+    max-height:max-content;
+    min-width:max-content;
+}
+.discussion-post1{
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    margin-top: 1rem;
+    display:flex;
+    flex-direction:column;
+    min-width:max-content;
+}
+
+.filler-post2{
+    width: 40rem;
+    position:relative;
+    bottom:.5rem;
+    padding-top:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

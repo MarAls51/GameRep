@@ -1,0 +1,161 @@
+.entire-settings-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+.settings-div-display {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  width: 65%;
+}
+
+.settings-navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.settings-bio {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 8rem;
+  height: 100%;
+  width: 60%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 400ms;
+}
+
+::placeholder{
+    color: black;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.settings-bio:hover {
+  transform: scale(1.01);
+}
+
+.settings-profile-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 35%;
+  background-color: rgb(33, 33, 33);
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 400ms;
+}
+.settings-profile-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 65%;
+  padding-right: -2px;
+  background-color: rgb(33, 33, 33);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 400ms;
+}
+
+.settings-profile-navbar:hover {
+  transform: scale(1.01);
+}
+.profile-name {
+  font-style: italic;
+  color: white;
+}
+.settings-profile-picture {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.4px;
+  border-radius: 10px;
+  transition: transform 400ms;
+}
+
+.settings-profile-picture:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.settings-button {
+  margin-top: -1px;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  transition: transform 400ms;
+}
+.settings-bio-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-username-input {
+  width: 70%;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.settings-button:hover {
+  background-color: red;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.settings-account-navbar {
+  margin-left: 15px;
+}
+
+.settings-update {
+  height: 80px;
+  width: 120px;
+    margin-left: 20px;
+    font-size: 1rem;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(33, 33, 33);
+  transition: transform 400ms;
+}
+
+.settings-update:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.settings-update-cancel {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.fa-home {
+  margin-left: 10px;
+}
+
+.fa-key {
+  margin-left: 10px;
+}
+
+.fa-cogs {
+  margin-left: 10px;
+}
+.fa-bell {
+  margin-left: 10px;
+}

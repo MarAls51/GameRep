@@ -1,0 +1,150 @@
+
+.fa-react {
+    margin-left: 0.05rem;
+    font-size: 1.6rem;
+  }
+
+.forum-menu-icon{
+    display: block;
+    color: rgb(33, 33, 33);
+    position: absolute;
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: transform 450ms;
+}
+
+.main-div-game{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  width:500
+}
+
+.game-search{
+  text-align:center;
+  height: 150px;
+  transition: transform 450ms;
+}
+
+.game-search:hover{
+transform: scale(1.1)
+}
+
+.community-search{
+font-size: 2.5rem;
+position:relative;
+top: 4rem;
+right: 11rem;
+}
+
+.searchcommunity{
+height: 40px;
+position: relative;
+color:black;
+font-size: 1.5rem;
+font-weight: bold;
+top: 20px;
+width: 300px;
+}
+
+
+.forum-menu-icon:hover{
+  transform: scale(1.05);
+}
+.forum-div{
+  background-color: rgb(33, 33, 33);
+  color: white;
+  border-radius: 1px;
+  cursor: default;
+  transition: all 0.2s ease-out;
+}
+
+.fa-comment-dots{
+  font-size: 1.8rem;
+}
+
+.community-list{
+  background: transparent;
+  border:black;
+  color:black;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 450ms;
+}
+
+.theitems{
+  position: relative;
+  font-size: 1.5rem;
+  top: -1.5px;
+  transition: all 0.15s ease;
+}
+
+.fleximages{
+display:flex;
+width: 200px;
+justify-content: space-between;
+transition: all 0.15s ease;
+}
+
+.imagesrc{
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  transition: all 0.15s ease;
+}
+
+.community-menu::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.community-list:hover{
+  color:red;
+  transform: scale(1.05);
+}
+
+.inlinegroup:hover{
+  cursor: default
+}
+
+.front{
+  max-width: "100%";
+  overflow-x:hidden;
+  height: "100%";
+  overflow-y: hidden
+}
+.community-menu.active {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  min-width:max-content;
+  width: 23%;
+  height: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  top: 240px;
+  background: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .theitems{
+    position: relative;
+    font-size: 1rem;
+    transition: all 0.15s ease;
+  }
+  
+  .fleximages{
+  display:flex;
+  width: 140px;
+  justify-content: space-between;
+  transition: all 0.15s ease;
+  }
+  
+  .imagesrc{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: all 0.15s ease;
+  }
+}
