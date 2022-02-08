@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.loginheaderbox {
+.login-header-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -24,7 +24,7 @@
   border-radius: 0.5rem;
 }
 
-.loginforgotpassword {
+.login-forgot-password {
   width: 10rem;
   height: 2rem;
   font-size: 0.5rem;
@@ -35,11 +35,11 @@
   transition: transform 600ms;
   border: none;
 }
-.loginforgotpassword:hover {
+.login-forgot-password:hover {
   transform: scale(1.06);
   cursor: pointer;
 }
-.loginbutton {
+.login-button {
   width: 70%;
   height: 12%;
   background-color: rgb(33, 33, 33);
@@ -49,22 +49,22 @@
   margin-bottom: 0.5rem;
 }
 
-.loginstatus {
+.login-status {
 margin-bottom: 1.5rem;
   color: rgb(228, 58, 58);
   font-size: .7rem;
 } 
 
-.loginbutton:hover {
+.login-button:hover {
   transform: scale(1.06);
   cursor: pointer;
 }
 
-.loginbuttonlogin {
+.login-buttonlogin {
   color: white;
 }
 
-.loginusername {
+.login-username {
   width: 70%;
   height: 10%;
   font-size: 1.5rem;
@@ -74,7 +74,7 @@ margin-bottom: 1.5rem;
   border-radius: 0.5rem;
 }
 
-.loginhr {
+.login-hr {
   margin-top: 0.5rem;
   border: 0;
   clear: both;
@@ -84,7 +84,7 @@ margin-bottom: 1.5rem;
   height: 1px;
 }
 
-.loginpassword {
+.login-password {
   width: 70%;
   height: 10%;
   font-size: 1.5rem;
@@ -93,7 +93,7 @@ margin-bottom: 1.5rem;
   border-radius: 0.5rem;
 }
 
-.loginheader {
+.login-header {
   font-size: 3rem;
   color: rgb(33, 33, 33);
   margin-bottom: 2rem;

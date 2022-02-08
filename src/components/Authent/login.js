@@ -21,15 +21,15 @@ Axios.post("http://localhost:3001/loginuser", {
 }
     return(
         <div className = "login" >
-            <div className = "loginheaderbox">
-            <h2 className = "loginheader">GameRep</h2>
-            <input className="loginusername" type = "text" onChange = {(e) => setUsername(e.target.username)}placeholder="Email/Username"/>
-            <input className="loginpassword" type="password" onChange = {(e) => setPassword(e.target.password)} placeholder="Password"/>
-            <button className = "loginforgotpassword"><h2>Forgot Password</h2></button>
-            <h3 className="loginstatus">{loginMessage ? loginMessage : ""}</h3>
-            <button className ="loginbutton"><h2 className="loginbuttonlogin" onClick = {() => signin()}>Login</h2></button>
-            <hr className="loginhr"></hr>
-            <button className ="loginbutton"><h2 className="loginbuttonlogin">Register</h2></button>
+            <div className = "login-header-box">
+            <h2 className = "login-header">GameRep</h2>
+            <input className="login-username" type = "text" onChange = {(e) => setUsername(e.target.username)}placeholder="Email/Username"/>
+            <input className="login-password" type="password" onChange = {(e) => setPassword(e.target.password)} placeholder="Password"/>
+            <button className = "login-forgot-password"><h2>Forgot Password</h2></button>
+            <h3 className="login-status">{loginMessage ? loginMessage : ""}</h3>
+            <button className ="login-button"><h2 className="login-button-login" onClick = {() => signin()}>Login</h2></button>
+            <hr className="login-hr"></hr>
+            <button className ="login-button"><h2 className="login-button-login">Register</h2></button>
             </div>
         </div>
     )

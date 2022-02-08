@@ -18,10 +18,10 @@ const Register = () => {
   };
   return (
     <div className="register">
-      <div className="registerheaderbox">
-        <h2 className="registerheader">GameRep</h2>
+      <div className="register-header-box">
+        <h2 className="register-header">GameRep</h2>
         <input
-          className="registerusername"
+          className="register-username"
           type="text"
           onChange={(e) => {
             setEmail(e.target.value);
@@ -37,16 +37,16 @@ const Register = () => {
           placeholder="Username"
         />
         <input
-          className="registerpassword"
+          className="register-password"
           onChange={(e) => {
             setPassword(e.target.value);
           }}
           type="password"
           placeholder="Password"
         />
-        <button className="registerforgotpassword"></button>
-        <button className="registerbutton" onClick={() => registerUser()}>
-          <h2 className="registerbuttonregister">Register</h2>
+        <button className="register-forgot-password"></button>
+        <button className="register-button" onClick={() => registerUser()}>
+          <h2 className="register-button-register">Register</h2>
         </button>
       </div>
     </div>
