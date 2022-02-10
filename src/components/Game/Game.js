@@ -5,7 +5,7 @@ import './Game.css'
 const TheGame = () =>
 {
     const [info, setInfo] = useState([])
-    const randomFunc = () =>{
+    const sentGame = () =>{
         fetch('http://localhost:3001/backend')
         .then(res => res.json())
         .then(res => setInfo(res))
@@ -16,7 +16,7 @@ const TheGame = () =>
             <div className="game-info">
             </div>
             <div className="div-reviews">
-                <button onClick = {() => randomFunc()}><h2>text</h2></button>
+                <button onClick = {() => sentGame()}><h2>text</h2></button>
                 <h2>{info[0]?.countryname || ""}</h2>
             </div>
         </div>

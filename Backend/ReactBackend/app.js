@@ -21,7 +21,7 @@ app.get("/backend", (req, res) => {
       if (err) {
         console.log(err);
       }
-      r = JSON.parse(JSON.stringify(result));
+      let r = JSON.parse(JSON.stringify(result));
       res
         .header("Access-Control-Allow-Origin", "http://localhost:3000")
         .json(r);
@@ -36,7 +36,7 @@ app.get("/b", (req, res) => {
       if (err) {
         console.log(err);
       }
-      r = JSON.parse(JSON.stringify(result));
+      let r = JSON.parse(JSON.stringify(result));
       res
         .header("Access-Control-Allow-Origin", "http://localhost:3000")
         .json(r);
@@ -51,7 +51,7 @@ app.get("/topgames", (req, res) => {
       if (err) {
         console.log(err);
       }
-      r = JSON.parse(JSON.stringify(result));
+      let r = JSON.parse(JSON.stringify(result));
       res
         .header("Access-Control-Allow-Origin", "http://localhost:3000")
         .json(r);
@@ -64,7 +64,7 @@ app.get("/topstudios", (req, res) => {
     if (err) {
       console.log(err);
     }
-    r = JSON.parse(JSON.stringify(result));
+    let r = JSON.parse(JSON.stringify(result));
     res.header("Access-Control-Allow-Origin", "http://localhost:3000").json(r);
   });
 });
@@ -74,31 +74,33 @@ app.get("/newgames", (req, res) => {
     if (err) {
       console.log(err);
     }
-    r = JSON.parse(JSON.stringify(result));
+    let r = JSON.parse(JSON.stringify(result));
     res.header("Access-Control-Allow-Origin", "http://localhost:3000").json(r);
   });
 });
 
 app.get("/communities", (req, res) => {
-  db.query("SELECT id,url,master,masterName,rep,communityName FROM MyDatabase.communities", (err, result) => {
-    if (err) {
-      console.log(err);
+  db.query(
+    "SELECT id,url,master,masterName,rep,communityName FROM MyDatabase.communities",
+    (err, result) => {
+      if (err) {
+        console.log(err);
+      }
+      let r = JSON.parse(JSON.stringify(result));
+      res
+        .header("Access-Control-Allow-Origin", "http://localhost:3000")
+        .json(r);
     }
-    r = JSON.parse(JSON.stringify(result));
-    res.header("Access-Control-Allow-Origin", "http://localhost:3000").json(r);
-  });
+  );
 });
-
-
-
 
 app.post("/registeruser", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
   const email = req.body.email;
   bcrypt.hash(password, saltRounds, (err, hash) => {
-    if(err) {
-      console.log(err)
+    if (err) {
+      console.log(err);
     }
     db.query(
       "INSERT INTO users (username, password, email) VALUES (?,?,?)",
