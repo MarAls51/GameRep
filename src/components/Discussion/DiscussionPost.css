@@ -9,6 +9,8 @@
 .discussion-post1{
 border: 1px solid rgba(0, 0, 0, 0.30);
 margin-top: 2rem;
+margin-left: 2rem;
+margin-right: 2rem;
 display:flex;
 flex-direction:column;
 background-color:white;

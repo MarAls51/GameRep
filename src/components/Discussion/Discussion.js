@@ -24,7 +24,11 @@ const Discussion = () => {
         <hr></hr>
         <div className="discussion-area">
           <div className="discussion-board">
+            <div className="discussion-board-options"/>
             <div className="the-posts">
+              <DiscussionPost />
+              <DiscussionPost />
+              <DiscussionPost />
               <DiscussionPost />
             </div>
           </div>

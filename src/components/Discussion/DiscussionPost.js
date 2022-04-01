@@ -7,8 +7,6 @@ const [good, setgood] = useState(false)
 const [bad, setbad] = useState(false)
 
 
-
-
 const select1 = () =>{
     if (good === true)
     {
@@ -50,17 +48,17 @@ return(
                     </button>
             </div>
             <div className="rate-posts">
-                    <button onClick={() => select1()} className={good ? "thumbsup active" : "thumbsup"}> 
+                    <button onClick={() => select1()} className={good ? "thumbs-up active" : "thumbs-up"}> 
                     <i className="fas fa-thumbs-up"></i>
                     </button>
-                    <button onClick={() => select2()} className={bad ? "thumbsdown active": "thumbsdown"}> 
+                    <button onClick={() => select2()} className={bad ? "thumbs-down active": "thumbs-down"}> 
                     <i className="fas fa-thumbs-down"></i> 
                     </button>
             </div>
         </div>
         <div className = "filler-post">
             <h1>Title</h1>
-            <h4>filler chat  filler chat filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler </h4>
+            <h4>filler chat  filler chat filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler</h4>
         </div>
     </div>
 </div>

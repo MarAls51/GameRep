@@ -1,5 +1,105 @@
 .game-div{
-background-color:green;
-height:100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+height:100vh;
 width:100%;
 }
+
+.game-trailers{
+display: flex;
+flex-direction: row;
+margin-top: 1rem;
+width: 100%;
+height: 60%;
+overflow-x: hidden;
+overflow-x: scroll;
+overflow-y: hidden;
+}
+
+.game-trailers::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+.game-div-bar{
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-div-bar{
+height: 50%;
+width: 60%;
+border-radius: 10rem;
+border: none;
+background-color: rgb(33, 33, 33);
+color: white;
+transition: transform 450ms;
+}
+
+.join-div-bar:hover{
+    transform: scale(1.05);
+    background-color: rgb(67, 201, 30);
+    cursor: pointer;
+}
+
+.join-div-bar2:hover{
+    transform: scale(1.05);
+    background-color: red;
+    cursor: pointer;
+}
+
+.join-div-bar2{
+    height: 50%;
+    width: 60%;
+    border-radius: 10rem;
+    border: none;
+    color: white;
+    background-color: red;
+    transition: transform 450ms;
+    transform: scale(1.05);
+    }
+
+.game-review-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+    background-color: green;
+}
+
+.game-reviews{
+display: flex;
+flex-direction: row;
+height:40%;
+width:100%;
+background-color:rgba(0, 0, 0, 0.030);
+border: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.game-reviews::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+.game-reviews-posts{
+    overflow: hidden;
+    overflow: scroll;
+      width: 60%;
+      background-color: blue;
+  }
+
+  .inside-game-review-board{
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    border-radius: 1rem;
+    transition: transform 450ms;
+  }
+
+  .inside-game-review-board:hover{
+      transform: scale(1.02);
+  }

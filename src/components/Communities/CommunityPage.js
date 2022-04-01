@@ -3,7 +3,6 @@ import Row from "../Row/RecGames.js";
 import "./CommunityPage.css";
 const Forum = ({ community }) => {
   const [recGames, setRecGames] = useState([]);
-  const [joined, setjoined] = useState(false);
   useEffect(() => {
     fetch("http://localhost:3001/topgames")
       .then((res) => res.json())
@@ -21,19 +20,6 @@ const Forum = ({ community }) => {
               <h3>Community GameRep:</h3>
               <h3 className="rep-size">{community.rep}</h3>
             </div>
-            <button className="forum-button" onClick={() => setjoined(!joined)}>
-              <div className="forum-join-leave">
-                {joined ? (
-                  <div className="forum-square">
-                    <i class="far fa-plus-square"></i>{" "}
-                  </div>
-                ) : (
-                  <div className="forum-check">
-                    <i class="far fa-check-square"></i>
-                  </div>
-                )}
-              </div>
-            </button>
           </div>
           <hr className="forum-line"></hr>
           <div className="forum-ex">
