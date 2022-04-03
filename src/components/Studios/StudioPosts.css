@@ -1,0 +1,143 @@
+.discussion-picture{
+position:relative;
+top: .6rem;
+left: .5rem;
+border-radius: 100%;
+}
+
+.discussion-image-name-row{
+display:flex;
+flex-direction:row;
+}
+
+.the-person-name{
+position:relative;
+}
+
+.rate-posts{
+display:flex;
+flex-direction:row;
+position:relative;
+justify-content:space-evenly;
+height: 30px;
+width: 60px;
+} 
+
+.thumbs-up{
+    background-color:transparent;
+    border:none;
+    font-size:1rem;
+    position:relative;
+    color:white;
+    transition: transform 600ms;
+    transform:scale(1.0)
+}
+
+.thumbs-up.active{
+    background-color:transparent;
+    border:none;
+    font-size:1rem;
+    position:relative;
+    color:lightblue;
+    transition: transform 600ms;
+    transform:scale(1.2)
+}
+
+.thumbs-down{
+    background-color:transparent;
+    border:none;
+    color:white;
+    font-size:1rem;
+    position:relative;
+    transition: transform 600ms;
+    transform: scale(1.0)
+} 
+
+.thumbs-down.active{
+    background-color:transparent;
+    border:none;
+    color:red;
+    font-size:1rem;
+    position:relative;
+    transition: transform 600ms;
+    transform: scale(1.2)
+} 
+
+.button-discussion{
+background-color:transparent;
+position: relative;
+left: 6rem;
+border:none;
+width:4rem;
+font-size: 1rem;
+height:100%;
+color:white;
+cursor:pointer;
+transition: transform 400ms;
+}
+
+.button-discussion:hover{
+    transform: scale(1.2)
+}
+
+.filler-post{
+    width: 40rem;
+    position:relative;
+    bottom:.5rem;
+    padding-top:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.name-date{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    height: 60px;
+    left: 1rem;
+    bottom: .5rem;
+    color:white;
+    }
+
+.the-date{
+    position:relative;
+    top: .3rem;
+    font-size: .2rem;
+}
+.the-person-name{
+    position:relative;
+    bottom: 1rem;
+}
+.discussion-post1-studio{
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    margin-top: 2rem;
+    width:60%;
+    margin-bottom: 5rem;
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+    min-width: max-content;
+    }
+    
+    .full-page{
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+    
+    .discussion-image-name-studio{
+        display:flex;
+        flex-direction:row;
+        background-color:rgb(38, 37, 37);
+        height:10%;
+        justify-content:space-between;
+        min-width:max-content;
+    }
+    
+    .filler-post-studio{
+       padding-left: 1rem;
+       width: 120vh;
+       min-height: min-content;
+       height: 90%;
+    }
+    

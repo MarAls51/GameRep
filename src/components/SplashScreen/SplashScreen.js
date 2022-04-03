@@ -25,8 +25,8 @@ fetch('http://localhost:3001/topgames')
     <div className="App">
       <Navbar/>
       <Row title="Top Community Rated Games Of The Month" input={games} />
-       <Row title="Top Community Rated Studios Of The Month" input={studios} />
-        <UpcommingGames title="Upcomming Games" input={newGames} /> 
+      <Row title="Top Community Rated Studios Of The Month" input={studios} />
+      <UpcommingGames title="Upcomming Games" input={newGames} /> 
       <Footer/>
     </div>
   );

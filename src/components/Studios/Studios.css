@@ -1,0 +1,50 @@
+.studio-page{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width: 100%;
+}
+.studio-page-header{
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: default;
+font-size: 2rem;
+height:25%;
+width: 100%;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+transition: transform 450ms;
+}
+
+.studio-page-header:hover{
+transform: scale(1.02);
+}
+
+.studio-page-feed-options{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: 14%;
+background-color:rgb(33, 33, 33);
+color: white;
+
+}
+
+.studio-page-feed-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    overflow: scroll;
+    height:86%;
+    width:100%;
+}
+
+
+.studio-page-feed{
+height:75%;
+width:100%;
+background-color:rgba(0, 0, 0, 0.030);
+}
+

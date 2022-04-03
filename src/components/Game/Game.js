@@ -29,12 +29,25 @@ const TheGame = () => {
           <div className="game-review-board">
             <div className="inside-game-review-board">
             <div className="game-div-bar">
-              <button
+               <button
                 className={jl ? "join-div-bar" : "join-div-bar2"}
                 onClick={() => joinLeave()}
               >
                 <h3>{jl ? "Join" : "Leave"} RedDead Community</h3>
-              </button>
+              </button> 
+              </div>
+              <div className="game-div-bar-info">
+                  <div className = "game-div-bar-info-community">
+                   <h4>Community Manager:  John</h4> 
+                   <h4>Number Of Members: 125</h4>
+                   <h4>Active Members Last Month: 50</h4>
+                   <h4>Community Management Rating: 50</h4>   
+                  </div>
+                  <div className = "game-div-bar-info-game">
+                  <h4>Game Studio: EA</h4> 
+                   <h4>Release Date: To Be Announced</h4>
+                   <h4>GameRep Rating: 50</h4>   
+                  </div>
               </div>
             </div>
           </div>

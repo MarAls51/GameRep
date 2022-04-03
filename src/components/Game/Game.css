@@ -24,13 +24,37 @@ overflow-y: hidden;
 
 .game-div-bar{
     display: flex;
-    flex-direction: row;
-    height: 15%;
-    width: 100%;
     align-items: center;
     justify-content: center;
+    height: 25%;
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
-
+.game-div-bar-info{
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    width: 100%;
+}
+.game-div-bar-info-community{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    height:100%;
+    width:50%;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+.game-div-bar-info-game{
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    width:50%;
+}
 .join-div-bar{
 height: 50%;
 width: 60%;
@@ -68,8 +92,7 @@ transition: transform 450ms;
     display: flex;
     align-items: center;
     justify-content: center;
-    width:40%;
-    background-color: green;
+    width:50%;
 }
 
 .game-reviews{
@@ -89,14 +112,16 @@ border: 1px solid rgba(0, 0, 0, 0.30);
     overflow: hidden;
     overflow: scroll;
       width: 60%;
-      background-color: blue;
   }
 
   .inside-game-review-board{
+      display: flex;
+      flex-direction: column;
     background-color: white;
     height: 90%;
     width: 90%;
     border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.30);
     transition: transform 450ms;
   }
 
