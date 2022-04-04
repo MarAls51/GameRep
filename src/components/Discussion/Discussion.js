@@ -3,6 +3,7 @@ import "./Discussion.css";
 import Navbar from "../Navbar/Navbar.js";
 import Row from "../Row/BestColumn";
 import DiscussionPost from "./DiscussionPost.js";
+import { useNavigate } from "react-router-dom";
 
 const Discussion = () => {
   const [games, setGames] = useState([]);
@@ -24,7 +25,7 @@ const Discussion = () => {
         <hr></hr>
         <div className="discussion-area">
           <div className="discussion-board">
-            <div className="discussion-board-options"/>
+           <div className="discussion-board-options"></div>
             <div className="the-posts">
               <DiscussionPost />
               <DiscussionPost />

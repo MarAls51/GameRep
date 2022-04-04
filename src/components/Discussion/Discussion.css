@@ -6,9 +6,13 @@ height: 100%;
 }
 
 .discussion-board-options{
-width: 200px;
-height: 100px;
-background-color:rgb(38, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    height:66.5px;
+    width:100%;
+    background-color:rgb(38, 37, 37);
 }
 
 .recent-announcement{
@@ -54,7 +58,7 @@ display:flex;
 justify-content:center;
 text-align:center;
 width: 100%;
-height: 30%;
+height:67.5px;
 background-color:rgb(38, 37, 37);
 }
 
@@ -66,7 +70,7 @@ background-color:rgb(38, 37, 37);
     display:flex;
     justify-content:center;
     flex-direction:column;
-    height:35rem;
+    height:70vh;
     width: 30%;
 }
 
@@ -76,22 +80,24 @@ background-color:rgb(38, 37, 37);
 }
 
 .the-posts{
+
     justify-content:center;
-    margin-top: 3rem;
+    height:90%;
     align-items:center;
-    min-width:90%;
+    overflow-y: hidden;
+    overflow-y: scroll;
+
 }
 
 .discussion-board{
+
     display:flex;
     flex-direction:column;
-    justify-content: flex-start;
     background-color:rgba(0, 0, 0, 0.030);
     border: 1px solid rgba(0, 0, 0, 0.30);
     width: 100%;
-    height: 35rem;
-    overflow-y: hidden;
-    overflow-y: scroll;
+    height: 70vh;
+
 }
 
 .row-posters::-webkit-scrollbar {

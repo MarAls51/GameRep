@@ -5,7 +5,7 @@ import Row from "../Row/BestColumn";
 import DiscussionPost from "./DiscussionPost.js";
 import { useNavigate } from "react-router-dom";
 
-const Ratings = () => {
+const Announcements = () => {
   const [games, setGames] = useState([]);
   useEffect(() => {
     fetch("http://localhost:3001/topgames")
@@ -47,4 +47,4 @@ const Ratings = () => {
   );
 };
 
-export default Ratings;
+export default Announcements;

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import Row from "../Row/RecGames.js";
 import "./CommunityPage.css";
 import { useNavigate } from "react-router-dom";
+
 const Forum = ({ community }) => {
   const [recGames, setRecGames] = useState([]);
+  let navigate = useNavigate();
   useEffect(() => {
     fetch("http://localhost:3001/topgames")
       .then((res) => res.json())
@@ -25,7 +27,7 @@ const Forum = ({ community }) => {
         <hr className="forum-line"></hr>
         <div className="forum-ex">
           <div className="forum-item-row1">
-            <button className="button-item-row1">
+            <button className="button-item-row1" onClick={() => navigate("/bugs")}>
               <h3 color="black">Bugs</h3>
               <i class="fas fa-bug"></i>
             </button>
@@ -35,7 +37,7 @@ const Forum = ({ community }) => {
         <hr className="forum-line"></hr>
         <div className="forum-ex">
           <div className="forum-item-row2">
-            <button className="button-item-row2">
+            <button className="button-item-row2" onClick={() => navigate("/discussion")}>
               <h3>Discussion</h3>
               <i class="fas fa-comments"></i>
             </button>
@@ -45,7 +47,7 @@ const Forum = ({ community }) => {
         <hr className="forum-line"></hr>
         <div className="forum-ex">
           <div className="forum-item-row3">
-          <button className="button-item-row3">
+          <button className="button-item-row3" onClick={() => navigate("/questions")}>
             <h3>Questions For Developers</h3>
             <i class="fas fa-question"></i>
             </button>
@@ -57,7 +59,7 @@ const Forum = ({ community }) => {
         <hr className="forum-line"></hr>
         <div className="forum-ex">
           <div className="forum-item-row4">
-          <button className="button-item-row4">
+          <button className="button-item-row4" onClick={() => navigate("/announcements")}>
             <h2>Announcements</h2>
             <i class="fas fa-bullhorn"></i>
             </button>
@@ -67,7 +69,7 @@ const Forum = ({ community }) => {
         <hr className="forum-line"></hr>
         <div className="forum-ex">
           <div className="forum-item-row5">
-          <button className="button-item-row5">
+          <button className="button-item-row5" onClick={() => navigate("/memes")}>
             <h2>Memes</h2>
             <i class="fas fa-laugh-squint"></i>
             </button>
@@ -77,7 +79,7 @@ const Forum = ({ community }) => {
         <hr className="forum-line"></hr>
         <div className="forum-ex">
           <div className="forum-item-row6">
-          <button className="button-item-row6">
+          <button className="button-item-row6" onClick={() => navigate("/ratings")}>
             <h2>Ratings</h2>
             <i class="fas fa-star"></i>
             </button>

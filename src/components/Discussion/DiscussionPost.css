@@ -4,17 +4,18 @@
     overflow-y:scroll;
     justify-content:center;
     align-items:center;
+    height:100%;
 }
 
-.discussion-post1{
+.discussion-post1-post{
 border: 1px solid rgba(0, 0, 0, 0.30);
-margin-top: 2rem;
 margin-left: 2rem;
 margin-right: 2rem;
 display:flex;
 flex-direction:column;
+width: 90%;
+min-height: max-content;
 background-color:white;
-min-width:max-content;
 }
 
 .discussion-picture{
@@ -108,11 +109,9 @@ transition: transform 400ms;
     transform: scale(1.2)
 }
 
-.filler-post{
-    width: 40rem;
+.filler-post-comment{
+    width: 100%;
     position:relative;
-    bottom:.5rem;
-    padding-top:1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }

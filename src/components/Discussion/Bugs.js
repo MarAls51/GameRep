@@ -5,7 +5,7 @@ import Row from "../Row/BestColumn";
 import DiscussionPost from "./DiscussionPost.js";
 import { useNavigate } from "react-router-dom";
 
-const Ratings = () => {
+const Bugs = () => {
   const [games, setGames] = useState([]);
   useEffect(() => {
     fetch("http://localhost:3001/topgames")
@@ -25,7 +25,9 @@ const Ratings = () => {
         <hr></hr>
         <div className="discussion-area">
           <div className="discussion-board">
-            <div className="discussion-board-options"/>
+            <div className="discussion-board-options" >
+              <h1>Bugs</h1>
+            </div>
             <div className="the-posts">
               <DiscussionPost />
               <DiscussionPost />
@@ -47,4 +49,4 @@ const Ratings = () => {
   );
 };
 
-export default Ratings;
+export default Bugs;

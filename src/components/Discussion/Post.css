@@ -1,23 +1,38 @@
 .background-post1{
-height:45rem;
-width:100%;
 background-color:rgba(0, 0, 0, 0.030);
-padding-bottom: 10rem;
+}
+
+.Discussion-Post{
+    height:40%;
+    width: 100%;
+}
+
+.Discussion-Comment{
+    height:60%;
+    width: 100%;
+}
+
+.Discussion-Comment-Options{
+    height:10%;
+    background-color:rgb(38, 37, 37);
+    width: 100%;
+}
+
+.Discussion-Comment-Comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    overflow: scroll;
+    height:90%;
+    width: 100%;
 }
 
 .discussion-post3{
 display:flex;
-height:100%;
+height:100vh;
 flex-direction:column;
-justify-content:flex-start;
 align-items:center;
-}
-
-.discussion-post2
-{
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items:center;
-    width:100%;
+overflow: scroll;
+overflow: hidden;
 }

@@ -1,26 +1,139 @@
-.discussion-post-div2{
-    display:flex;
-    flex-direction:column;
-    overflow-x:scroll;
-    justify-content:center;
-    align-items:center;
-    max-width:60%;
-    max-height:max-content;
-    min-width:max-content;
-}
-.discussion-post1{
-    border: 1px solid rgba(0, 0, 0, 0.30);
-    margin-top: 1rem;
-    display:flex;
-    flex-direction:column;
-    min-width:max-content;
-}
-
-.filler-post2{
-    width: 40rem;
+.discussion-picture{
     position:relative;
-    bottom:.5rem;
-    padding-top:1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+    top: .6rem;
+    left: .5rem;
+    border-radius: 100%;
+    }
+    .discussion-post-div-2{
+        width: 100%;
+        height: 100%;
+    }
+    .discussion-image-name-row{
+    display:flex;
+    flex-direction:row;
+    }
+    
+    .the-person-name{
+    position:relative;
+    }
+    
+    .rate-posts{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    justify-content:space-evenly;
+    height: 30px;
+    width: 60px;
+    } 
+    
+    .thumbs-up{
+        background-color:transparent;
+        border:none;
+        font-size:1rem;
+        position:relative;
+        color:white;
+        transition: transform 600ms;
+        transform:scale(1.0)
+    }
+    
+    .thumbs-up.active{
+        background-color:transparent;
+        border:none;
+        font-size:1rem;
+        position:relative;
+        transition: transform 600ms;
+        transform:scale(1.2)
+    }
+    
+    .thumbs-down{
+        background-color:transparent;
+        border:none;
+        color:white;
+        font-size:1rem;
+        position:relative;
+        transition: transform 600ms;
+        transform: scale(1.0)
+    } 
+    
+    .thumbs-down.active{
+        background-color:transparent;
+        border:none;
+        color:red;
+        font-size:1rem;
+        position:relative;
+        transition: transform 600ms;
+        transform: scale(1.2)
+    } 
+    
+    .button-discussion{
+    background-color:transparent;
+    position: relative;
+    left: 6rem;
+    border:none;
+    width:4rem;
+    font-size: 1rem;
+    height:100%;
+    color:white;
+    cursor:pointer;
+    transition: transform 400ms;
+    }
+    
+    .button-discussion:hover{
+        transform: scale(1.2)
+    }
+    
+    
+    .name-date{
+        position:relative;
+        display:flex;
+        flex-direction:column;
+        height: 60px;
+        left: 1rem;
+        bottom: .5rem;
+        color:white;
+        }
+    
+    .the-date{
+        position:relative;
+        top: .3rem;
+        font-size: .2rem;
+    }
+    .the-person-name{
+        position:relative;
+        bottom: 1rem;
+    }
+    
+    .discussion-post1-studio-c{
+        margin-top:1rem;
+        border: 1px solid rgba(0, 0, 0, 0.30);
+        width: 95%;
+        margin-bottom: 2rem;
+        display:flex;
+        flex-direction:column;
+        background-color:white;
+        transition: transform 450ms;
+        }
+        
+        .full-page-1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+        }
+        
+        .discussion-image-name-studio{
+            display:flex;
+            flex-direction:row;
+            background-color:rgb(38, 37, 37);
+            height:10%;
+            justify-content:space-between;
+            min-width:max-content;
+        }
+        
+        .filler-post-studio-c{
+           padding-left: 1rem;
+           padding-right: 1rem;
+           width: 99%;
+           min-height: min-content;
+           height: 90%;
+        }

@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
 import "./DiscussionPost.css"
+import { useNavigate } from "react-router-dom";
 
-const DiscussionPost = () =>
+const Questions = () =>
 {
 const [good, setgood] = useState(false)
 const [bad, setbad] = useState(false)
@@ -35,7 +36,7 @@ const select2 = () =>{
 return(
 
 <div className="discussion-post-div">
-    <div className="discussion-post1-post">
+    <div className="discussion-post1">
         <div className="discussion-image-name">
             <div className="discussion-image-name-row">
                 <img className ="discussion-picture" style={{height:40, width:40}} src="/assets/master.jpg" alt=""></img>
@@ -56,9 +57,9 @@ return(
                     </button>
             </div>
         </div>
-        <div className = "filler-post-comment">
+        <div className = "filler-post">
             <h1>Title</h1>
-            <h4>filler chat  filler chat filler chat filler chat filler chat filler chat filler chat  filler chat filler chat filler chat filler chat filler chat filler chat  filler chat filler chat filler chat filler chat filler chat filler chat  filler chat filler chat filler chat filler chat filler chat filler chat  filler chat filler chat filler chat filler chat filler chat </h4>
+            <h4>filler chat  filler chat filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler  filler chat filler chat filler chat filler chat filler chat filler</h4>
         </div>
     </div>
 </div>
@@ -66,4 +67,4 @@ return(
     )
 }
 
-export default DiscussionPost;
+export default Questions;
