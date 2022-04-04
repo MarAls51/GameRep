@@ -24,8 +24,10 @@
   padding-left: 4.5rem;
 }
 
-.forum-item-row1 {
+.button-item-row2{
   display: flex;
+  border:none;
+  background-color: transparent;
   flex-direction: row;
   margin-left: 2rem;
   font-size: 1.2rem;
@@ -34,19 +36,11 @@
   cursor: pointer;
   transition: transform 450ms;
 }
-.forum-item-row2 {
+.button-item-row3 {
   display: flex;
   flex-direction: row;
-  margin-left: 2rem;
-  font-size: 1.2rem;
-  align-items: center;
-  justify-content: flex-start;
-  cursor: pointer;
-  transition: transform 450ms;
-}
-.forum-item-row3 {
-  display: flex;
-  flex-direction: row;
+  border:none;
+  background-color: transparent;
   align-items: center;
   font-size: 1.2rem;
   margin-left: 2rem;
@@ -54,9 +48,11 @@
   cursor: pointer;
   transition: transform 450ms;
 }
-.forum-item-row4 {
+.button-item-row4{
   display: flex;
   flex-direction: row;
+  border:none;
+  background-color: transparent;
   align-items: center;
   font-size: 1.2rem;
   margin-left: 2rem;
@@ -64,9 +60,11 @@
   cursor: pointer;
   transition: transform 450ms;
 }
-.forum-item-row5 {
+.button-item-row5{
   display: flex;
   flex-direction: row;
+  border:none;
+  background-color: transparent;
   align-items: center;
   font-size: 1.2rem;
   margin-left: 2rem;
@@ -74,9 +72,12 @@
   cursor: pointer;
   transition: transform 450ms;
 }
-.forum-item-row6 {
+
+.button-item-row6{
   display: flex;
   flex-direction: row;
+  border:none;
+  background-color: transparent;
   align-items: center;
   font-size: 1.2rem;
   margin-left: 2rem;
@@ -90,27 +91,24 @@
   flex-direction: column;
 }
 
-.forum-item-row1:hover {
-  color: red;
-  transform: scale(1.05);
-}
-.forum-item-row2:hover {
+
+.button-item-row2:hover {
   color: blue;
   transform: scale(1.05);
 }
-.forum-item-row3:hover {
+.button-item-row3:hover {
   color: orange;
   transform: scale(1.05);
 }
-.forum-item-row4:hover {
+.button-item-row4:hover {
   color: green;
   transform: scale(1.05);
 }
-.forum-item-row5:hover {
+.button-item-row5:hover {
   color: maroon;
   transform: scale(1.05);
 }
-.forum-item-row6:hover {
+.button-item-row6:hover {
   color: gold;
   transform: scale(1.05);
 }
@@ -179,4 +177,22 @@
   width: 250px;
   margin-bottom: 30px;
   border-radius: 20%;
+}
+
+.button-item-row1{
+border: none;
+background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: transform 450ms;
+}
+
+.button-item-row1:hover {
+  color: red;
+  transform: scale(1.05);
 }

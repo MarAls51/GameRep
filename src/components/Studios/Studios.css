@@ -41,6 +41,17 @@ color: white;
     width:100%;
 }
 
+.studio-page-feed-options-info{
+    background-color: transparent;
+    border:none;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    font-size: 1rem;
+}
 
 .studio-page-feed{
 height:75%;

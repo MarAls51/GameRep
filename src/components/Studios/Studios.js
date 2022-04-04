@@ -12,7 +12,7 @@ return(
             </div>
             <div className="studio-page-feed">
                 <div className="studio-page-feed-options">
-                    <h2>options</h2>
+                    <h2 className="studio-page-feed-options-info">options</h2>
                 </div>
                 <div className="studio-page-feed-data">
                     <StudioPosts/>
