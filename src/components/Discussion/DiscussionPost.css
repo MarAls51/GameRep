@@ -4,7 +4,7 @@
     overflow-y:scroll;
     justify-content:center;
     align-items:center;
-    height:100%;
+    margin-top: 5rem;
 }
 
 .discussion-post1-post{
