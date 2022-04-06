@@ -8,14 +8,14 @@
 }
 
 .discussion-post1-post{
-border: 1px solid rgba(0, 0, 0, 0.30);
-margin-left: 2rem;
-margin-right: 2rem;
-display:flex;
-flex-direction:column;
-width: 90%;
-min-height: max-content;
-background-color:white;
+ border: 1px solid rgba(0, 0, 0, 0.30);
+ margin-left: 2rem;
+ margin-right: 2rem;
+ display:flex;
+ flex-direction:column;
+ width: 90%;
+ min-height: max-content;
+ background-color:white;
 }
 
 .discussion-picture{

@@ -1,0 +1,52 @@
+.create-posts-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
+}
+
+.create-posts-title {
+  width: 100%;
+  height: 20%;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.create-posts-div {
+  height: 70%;
+  width: 60%;
+  border-radius: 1rem;
+  background-color: white;
+  transition: transform 450ms;
+  padding: 2rem;
+}
+
+.create-posts-div-title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:10%;
+    width:100%;
+    background-color: green;
+    margin-bottom: 1rem;
+}
+
+.create-posts-options{
+    height:8%;
+    width:100%;
+    background-color:  rgb(33, 33, 33);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.create-posts-div:hover {
+  transform: scale(1.02);
+}
+
+.create-posts-body {
+  width: 100%;
+  height: 70%;
+}

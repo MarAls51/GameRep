@@ -11,6 +11,8 @@ import Post from "./components/Discussion/Post";
 import Game from "./components/Game/Game";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Profile from "./components/Profile/Profile";
+import CreatePosts from "./components/CreatePosts/CreatePosts";
+
 import "./App.css";
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SplashScreen />} />
           <Route path="/communities" element={<Communities />} />
-          <Route path="/games" element={<Game />} />
+          <Route path="/games" element={<CreatePosts />} />
           <Route path="/studios" element={<Studios/>} />
           <Route path="/profile" element={<Profile/>} />
           <Route path="/bugs" element={<Post/>} />
