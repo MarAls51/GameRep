@@ -5,7 +5,7 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.070);
 }
 
 .create-posts-title {
@@ -17,7 +17,7 @@
 }
 
 .create-posts-div {
-  height: 70%;
+  height: 80%;
   width: 60%;
   border-radius: 1rem;
   background-color: white;
@@ -25,23 +25,45 @@
   padding: 2rem;
 }
 
-.create-posts-div-title{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height:10%;
-    width:100%;
-    background-color: green;
-    margin-bottom: 1rem;
+.create-posts-div-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  height: 10%;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: transform 450ms;
 }
 
-.create-posts-options{
-    height:8%;
-    width:100%;
-    background-color:  rgb(33, 33, 33);
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+
+.create-posts-div-title:hover{
+    background-color: orange;
+    transform:scale(1.02);
+    cursor: default;
 }
+
+.create-posts-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 8%;
+  width: 100%;
+  color: white;
+  background-color: rgb(33, 33, 33);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  transition: transform 450ms;
+}
+
+.create-posts-options:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
 .create-posts-div:hover {
   transform: scale(1.02);
 }
@@ -49,4 +71,5 @@
 .create-posts-body {
   width: 100%;
   height: 70%;
+  border: 1px solid;
 }

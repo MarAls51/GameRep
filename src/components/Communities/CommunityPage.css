@@ -91,32 +91,43 @@
   flex-direction: column;
 }
 
-
 .button-item-row2:hover {
   color: blue;
   transform: scale(1.05);
 }
+
 .button-item-row3:hover {
+
   color: orange;
   transform: scale(1.05);
+
 }
+
 .button-item-row4:hover {
   color: green;
   transform: scale(1.05);
 }
+
 .button-item-row5:hover {
+
   color: maroon;
   transform: scale(1.05);
+  
 }
+
 .button-item-row6:hover {
+
   color: gold;
   transform: scale(1.05);
+
 }
 
 .forum-image {
+
   height: 50px;
   width: 50px;
   border-radius: 50%;
+
 }
 
 .forum-image-logo-container {
